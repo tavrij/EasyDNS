@@ -1,4 +1,4 @@
-# مدیریت DNS با اسکریپت BAT: راه‌حلی ساده برای عبور از تحریم‌ها
+# مدیریت DNS با اسکریپت BAT با نام EasyDNS: راه‌حلی ساده برای عبور از تحریم‌ها
 
 ![GitHub](https://img.shields.io/badge/license-MIT-blue)
 ![GitHub](https://img.shields.io/badge/language-BAT-yellow)

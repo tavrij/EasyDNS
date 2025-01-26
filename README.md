@@ -10,6 +10,7 @@ A simple and powerful BAT script to manage DNS settings on Windows systems. No n
 ## 📜 Table of Contents
 - [Features](#-features)
 - [How to Use](#-how-to-use)
+- [DNS List](#-dns-list)
 - [Contributing](#-contributing)
 - [License](#-license)
 
@@ -37,6 +38,22 @@ A simple and powerful BAT script to manage DNS settings on Windows systems. No n
 
 ---
 
+## 📋 DNS List
+The script uses a `dns_list.txt` file to store predefined DNS entries. Each entry is formatted as follows:
+<DNS Name>,<Primary DNS>,<Secondary DNS>,<Validate Settings>
+
+### Example DNS Entries:
+403,10.202.10.202,10.202.10.102,yes
+shekan,178.22.122.100,185.51.200.2,yes
+
+
+- **403**: A DNS profile with primary DNS `10.202.10.202` and secondary DNS `10.202.10.102`. The `yes` indicates that the settings should be validated after applying.
+- **shekan**: A DNS profile with primary DNS `178.22.122.100` and secondary DNS `185.51.200.2`. The `yes` indicates that the settings should be validated after applying.
+
+You can add, edit, or delete entries in the `dns_list.txt` file as needed.
+
+---
+
 ## 🤝 Contributing
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
 
@@ -59,6 +76,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## 📜 فهرست مطالب
 - [ویژگی‌ها](#-ویژگی‌ها)
 - [نحوه استفاده](#-نحوه-استفاده)
+- [لیست DNS](#-لیست-dns)
 - [مشارکت](#-مشارکت)
 - [لایسنس](#-لایسنس)
 
@@ -86,10 +104,28 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
+## 📋 لیست DNS
+اسکریپت از فایل `dns_list.txt` برای ذخیره DNSهای از پیش تعریف شده استفاده می‌کند. هر ورودی به این شکل فرمت شده است:
+<نام DNS>,<DNS اولیه>,<DNS ثانویه>,<اعتبارسنجی تنظیمات>
+
+
+### مثال‌هایی از ورودی‌های DNS:
+403,10.202.10.202,10.202.10.102,yes
+shekan,178.22.122.100,185.51.200.2,yes
+
+
+- **403**: یک پروفایل DNS با DNS اولیه `10.202.10.202` و DNS ثانویه `10.202.10.102`. مقدار `yes` نشان می‌دهد که پس از اعمال تنظیمات، آن‌ها اعتبارسنجی شوند.
+- **shekan**: یک پروفایل DNS با DNS اولیه `178.22.122.100` و DNS ثانویه `185.51.200.2`. مقدار `yes` نشان می‌دهد که پس از اعمال تنظیمات، آن‌ها اعتبارسنجی شوند.
+
+می‌توانید ورودی‌های جدید را به فایل `dns_list.txt` اضافه کنید یا ورودی‌های موجود را ویرایش یا حذف کنید.
+
+---
+
 ## 🤝 مشارکت
-از مشارکت استقبال میکنیمد! اگر پیشنهادی دارید، باگی مشاهده کرده‌اید یا درخواست ویژگی جدیدی دارید، لطفاً یک Issue باز کنید یا یک Pull Request ارسال کنید.
+از مشارکت استقبال می‌کنیم! اگر پیشنهادی دارید، باگی مشاهده کرده‌اید یا درخواست ویژگی جدیدی دارید، لطفاً یک Issue باز کنید یا یک Pull Request ارسال کنید.
 
 ---
 
 ## 📄 لایسنس
 این پروژه تحت لایسنس MIT منتشر شده است. برای جزئیات بیشتر، فایل [LICENSE](LICENSE) را مشاهده کنید.
+
